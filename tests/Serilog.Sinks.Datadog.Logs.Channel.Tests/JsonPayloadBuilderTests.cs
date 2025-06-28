@@ -4,7 +4,7 @@ using NUnit.Framework;
 using Serilog.Events;
 using Serilog.Parsing;
 
-namespace Serilog.Sinks.Datadog.Logs.Tests
+namespace Serilog.Sinks.Datadog.Logs.Channel.Tests
 {
     [TestFixture]
     class JsonPayloadBuilderTests

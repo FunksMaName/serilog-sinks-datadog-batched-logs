@@ -5,11 +5,11 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D0A5A0BA-56F9-4C56-8785-8C9F23A3B411}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serilog.Sinks.Datadog.Logs", "src\Serilog.Sinks.Datadog.Logs\Serilog.Sinks.Datadog.Logs.csproj", "{897105F7-58A7-4849-98A8-EB8EDD450E47}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serilog.Sinks.Datadog.Logs.Channel", "src\Serilog.Sinks.Datadog.Logs.Channel\Serilog.Sinks.Datadog.Logs.Channel.csproj", "{897105F7-58A7-4849-98A8-EB8EDD450E47}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{CDDB8CB1-42E1-4722-8D83-4BB298ED5D16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serilog.Sinks.Datadog.Logs.Tests", "tests\Serilog.Sinks.Datadog.Logs.Tests\Serilog.Sinks.Datadog.Logs.Tests.csproj", "{54D06DEA-0F0B-4D2A-ADDA-2F5221EE036C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serilog.Sinks.Datadog.Logs.Channel.Tests", "tests\Serilog.Sinks.Datadog.Logs.Channel.Tests\Serilog.Sinks.Datadog.Logs.Channel.Tests.csproj", "{54D06DEA-0F0B-4D2A-ADDA-2F5221EE036C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

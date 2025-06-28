@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\Serilog.Sinks.Datadog.Logs.snk</AssemblyOriginatorKeyFile>
+    <AssemblyName>Serilog.Sinks.Datadog.Logs.Channel.Tests</AssemblyName>
+    <RootNamespace>Serilog.Sinks.Datadog.Logs.Channel.Tests</RootNamespace>
+    <TargetFramework>net472</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="NUnit" Version="3.13.2" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.3.0" />
+    <ProjectReference Include="..\..\src\Serilog.Sinks.Datadog.Logs.Channel\Serilog.Sinks.Datadog.Logs.Channel.csproj" />
+  </ItemGroup>
+
+</Project>

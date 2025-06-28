@@ -7,8 +7,9 @@ using System.Text.RegularExpressions;
 using NUnit.Framework;
 using Serilog.Events;
 using Serilog.Formatting;
+using Serilog.Sinks.Datadog.Logs.Tests;
 
-namespace Serilog.Sinks.Datadog.Logs.Tests
+namespace Serilog.Sinks.Datadog.Logs.Channel.Tests
 {
 
     class MessageOnlyFormatterForTest : ITextFormatter

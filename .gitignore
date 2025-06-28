@@ -32,6 +32,9 @@ bld/
 *.VisualState.xml
 TestResult.xml
 
+#Rider IDE
+*.idea/
+
 # Build Results of an ATL Project
 [Dd]ebugPS/
 [Rr]eleasePS/

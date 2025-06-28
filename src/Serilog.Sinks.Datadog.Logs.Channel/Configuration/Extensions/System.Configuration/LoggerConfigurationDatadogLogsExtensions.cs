@@ -9,6 +9,7 @@ using Serilog.Events;
 using Serilog.Sinks.Datadog.Logs;
 using Serilog.Formatting;
 
+
 namespace Serilog
 {
     /// <summary>
@@ -67,9 +68,9 @@ namespace Serilog
             }
 
             configuration = (configuration != null) ? configuration : new DatadogConfiguration();
-            var sink = DatadogSink.Create(apiKey, source, service, host, tags, configuration, batchSizeLimit, batchPeriod, queueLimit, exceptionHandler, detectTCPDisconnection, null, formatter, maxMessageSize);
+            var (sink, batchingOptions) = DatadogSink.Create(apiKey, source, service, host, tags, configuration, batchSizeLimit, batchPeriod, queueLimit, exceptionHandler, detectTCPDisconnection, null, formatter, maxMessageSize);
 
-            return loggerConfiguration.Sink(sink, logLevel);
+            return loggerConfiguration.Sink(sink, batchingOptions, logLevel);
         }
     }
 }

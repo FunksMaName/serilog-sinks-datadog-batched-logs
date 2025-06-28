@@ -74,11 +74,11 @@ namespace Serilog
             }
 
             var config = ApplyMicrosoftExtensionsConfiguration.ConfigureDatadogConfiguration(configuration, configurationSection);
-            var sink = DatadogSink.Create(apiKey, source, service, host, tags, config, batchSizeLimit, batchPeriod, queueLimit, exceptionHandler, detectTCPDisconnection, client, formatter, maxMessageSize);
+            var (sink, batchingOptions) = DatadogSink.Create(apiKey, source, service, host, tags, config, batchSizeLimit, batchPeriod, queueLimit, exceptionHandler, detectTCPDisconnection, client, formatter, maxMessageSize);
 
             // Use restrictedToMinimumLevel if set, otherwise use logLevel
             var effectiveLevel = restrictedToMinimumLevel != LevelAlias.Minimum ? restrictedToMinimumLevel : logLevel;
-            return loggerConfiguration.Sink(sink, effectiveLevel);
+            return loggerConfiguration.Sink(sink, batchingOptions, effectiveLevel);
         }
     }
 }
